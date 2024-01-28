@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBVN</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./Image/logo.png" alt="" class="logo">
+                </a>
+            </div>   
+            <div class="menu-inner">      
+                <div class="menu-item" onclick="window.location.href='./index.html'">Trang chủ</div>
+                <div class="menu-item" onclick="window.location.href='./SideHtml/discover.html'">Sự kiện</div>
+                <div class="menu-item" onclick="window.location.href='./SideHtml/Faq.html'">Chi tiết/FaQ</div>
+                <div class="menu-item" onclick="window.location.href='./SideHtml/login.html'">Đăng nhập</div>
+                <div class="menu-item" onclick="window.location.href='./SideHtml/register.html'">Đăng ký</div>
+            </div>
+            <div class="input">
+                <input type="text" class="search_bar" placeholder="Tìm kiếm">
+                <i class="fas fa-search search_icon"></i>
+              </div>              
+        </div>
+        <div class="slides">
+            <img src="./Image/Image1.jpg" onclick="changeImage()" id="slide" alt="">
+        </div>
+    <div class="body">
+            <div class="sidenav">
+                <h2>Dòng loại</h2>
+                <a href="#DanDung">Máy Bay Dân Dụng</a>
+                <a href="#nho" class="side">■ Loại Nhỏ</a>
+                <a href="#trung" class="side">■ Loại Trung Bình</a>
+                <a href="#lon" class="side">■ Loại Lớn</a>
+                <a href="#quansu">Máy Bay Quân Sự</a>
+                <a href="#Phukien">Phụ kiện, Vũ khí</a>
+            </div>
+            <div class="grid-photo" id="grid">
+                <div class="phanloai">
+                    <div id="DanDung"><h2>Máy bay Dân Dụng</h2></div>
+                </div>
+            <div class="DanhSach">
+            <div id="nho"><h3>Loại nhẹ</h3></div>
+            <div class="Photo">
+            <img src="./Image/Cessna.jpg" alt="">
+            <h4>Cessna 172 Skyhawk</h4>
+            <p><strong>Nhà Sản Xuất:</strong> Cessna (Textron Aviation).<br>
+                <strong>Dung Tích Hành Khách:</strong> 4 người.<br>
+                <strong>Mô Tả:</strong> Máy bay nhỏ, dùng phổ biến cho đào tạo và chuyến bay cá nhân.</p>
+            <i>$150,000</i>
+            <div class="SoLuong">
+                <div>Số lượng:</div>
+                <input type="number" class="input-number" name="quantity" min="0" max="100" value="0">
+                <div>/100</div>
+                <button class="adjust-btn" onclick="adjustQuantity(event, 1)">+</button>
+                <button class="adjust-btn" onclick="adjustQuantity(event, -1)">-</button>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+            <button class="buy-btn">Mua ngay</button>
+            </div>
+            <div class="Photo">
+            <img src="./Image/PA-28.jpg" alt="">
+            <h4>Piper PA-28 Cherokee</h4>
+            <p><strong>Nhà Sản Xuất:</strong> Piper Aircraft.<br>
+                <strong>Dung Tích Hành Khách:</strong> 4-6 người.<br>
+                <strong>Mô Tả:</strong> Máy bay nhỏ đa dụng, thích hợp cho chuyến bay nhẹ và đào tạo.</p>
+            <i>$200,000</i>
+            <div class="SoLuong">
+                <div>Số lượng:</div>
+                <input type="number" class="input-number" name="quantity" min="0" max="100" value="0">
+                <div>/100</div>
+                <button class="adjust-btn" onclick="adjustQuantity(event, 1)">+</button>
+                <button class="adjust-btn" onclick="adjustQuantity(event, -1)">-</button>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+            <button class="buy-btn">Mua ngay</button>
+            </div>
+            <div class="Photo">
+            <img src="./Image/Beechcraft.jpg" alt="">
+            <h4>Beechcraft Bonanza</h4>
+            <p><strong>Nhà Sản Xuất:</strong> Beechcraft (Textron Aviation).<br>
+                <strong>Dung Tích Hành Khách:</strong> 4-6 người.<br>
+                <strong>Mô Tả:</strong> Máy bay du lịch nhỏ với hiệu suất cao và thiết kế sang trọng.</p>
+            <i>$700,000</i>
+            <div class="SoLuong">
+                <div>Số lượng:</div>
+                <input type="number" class="input-number" name="quantity" min="0" max="100" value="0">
+                <div>/100</div>
+                <button class="adjust-btn" onclick="adjustQuantity(event, 1)">+</button>
+                <button class="adjust-btn" onclick="adjustQuantity(event, -1)">-</button>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+            <button class="buy-btn">Mua ngay</button>
+            </div>
+            <div id="trung"><h3>Loại Trung</h3></div>
+            <div class="Photo">
+            <img src="./Image/B737.jpg" alt="">
+            <h4>Boeing 737 Max-8</h4>
+            <p><strong>Nhà Sản Xuất:</strong> Boeing Commercial Airplanes.<br>
+                <strong>Dung Tích Hành Khách:</strong> Tùy chọn từ 85 đến hơn 200 người.<br>
+                <strong>Mô Tả:</strong> Máy bay thương mại phổ biến, Đây là phiên bản nâng cấp của dòng Boeing 737</p>
+            <i>$60,000,000</i>
+            <div class="SoLuong">
+                <div>Số lượng:</div>
+                <input type="number" class="input-number" name="quantity" min="0" max="100" value="0">
+                <div>/100</div>
+                <button class="adjust-btn" onclick="adjustQuantity(event, 1)">+</button>
+                <button class="adjust-btn" onclick="adjustQuantity(event, -1)">-</button>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+            <button class="buy-btn">Mua ngay</button>
+            </div>
+            <div class="Photo">
+            <img src="./Image/A320.jpg" alt="">
+            <h4>Airbus A320</h4>
+            <p><strong>Nhà Sản Xuất:</strong> Airbus.<br>
+                <strong>Dung Tích Hành Khách:</strong> Tùy chọn từ 140 đến hơn 200 người.<br>
+                <strong>Mô Tả:</strong> Máy bay thương mại hiện đại với khả năng vận chuyển hành khách trung bình đến xa.</p>
+            <i>$100,000,000</i>
+            <div class="SoLuong">
+                <div>Số lượng:</div>
+                <input type="number" class="input-number" name="quantity" min="0" max="100" value="0">
+                <div>/100</div>
+                <button class="adjust-btn" onclick="adjustQuantity(event, 1)">+</button>
+                <button class="adjust-btn" onclick="adjustQuantity(event, -1)">-</button>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+            <button class="buy-btn">Mua ngay</button>
+            </div>
+            <div class="Photo">
+            <img src="./Image/E190.jpg" alt="">
+            <h4>Embraer E190</h4>
+            <p><strong>Nhà Sản Xuất:</strong> Embraer.<br>
+                <strong>Dung Tích Hành Khách:</strong> Khoảng 100 người.<br>
+                <strong>Mô Tả:</strong> Máy bay hạng trung chuyên dụng cho các hành khách ít đến trung bình.</p>
+            <i>$50,000,000</i>
+            <div class="SoLuong">
+                <div>Số lượng:</div>
+                <input type="number" class="input-number" name="quantity" min="0" max="100" value="0">
+                <div>/100</div>
+                <button class="adjust-btn" onclick="adjustQuantity(event, 1)">+</button>
+                <button class="adjust-btn" onclick="adjustQuantity(event, -1)">-</button>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+            <button class="buy-btn">Mua ngay</button>
+            </div>
+            <div id="lon"><h3>Loại Lớn</h3></div>
+            <div class="Photo">
+            <img src="./Image/B747.jpg" alt="">
+            <h4>Boeing 747</h4>
+            <p><strong>Nhà Sản Xuất:</strong> Boeing Commercial Airplanes.<br>
+                <strong>Dung Tích Hành Khách:</strong> Từ 416 đến hơn 660 người (phụ thuộc vào cấu hình).<br>
+                <strong>Mô Tả:</strong> Máy bay thương mại lớn với khả năng chở hàng đồ sộ hoặc hành khách nhiều. Nổi tiếng với hình dáng động cơ kép và tầm bay xa.</p>
+            <b>Đã Ngưng Sản Xuất</b>
+            </div>
+            <div class="Photo">
+            <img src="./Image/A380.webp" alt="">
+            <h4>Airbus A380</h4>
+            <p><strong>Nhà Sản Xuất:</strong> Airbus.<br>
+                <strong>Dung Tích Hành Khách:</strong> Đến 853 người (phụ thuộc vào cấu hình).<br>
+                <strong>Mô Tả:</strong> Máy bay thương mại siêu lớn, là một trong những loại máy bay dân dụng lớn nhất thế giới. Có nhiều tiện nghi và không gian thoải mái cho hành khách.</p>
+            <i>$445,000,000</i>
+            <div class="SoLuong">
+                <div>Số lượng:</div>
+                <input type="number" class="input-number" name="quantity" min="0" max="100" value="0">
+                <div>/100</div>
+                <button class="adjust-btn" onclick="adjustQuantity(event, 1)">+</button>
+                <button class="adjust-btn" onclick="adjustQuantity(event, -1)">-</button>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+            <button class="buy-btn">Mua ngay</button>
+            </div>
+            <div class="Photo">
+            <img src="./Image/A350.jpg" alt="">
+            <h4>Airbus A350 XWB</h4>
+            <p><strong>Nhà Sản Xuất:</strong> Airbus.<br>
+                <strong>Dung Tích Hành Khách:</strong> Từ 300 đến 440 người (phụ thuộc vào cấu hình).<br>
+                <strong>Mô Tả:</strong> Máy bay dân dụng thế hệ mới của Airbus với thiết kế hiện đại, chất liệu nhẹ, và hiệu suất năng lượng cao. Sử dụng công nghệ tiên tiến để giảm tiêu thụ nhiên liệu và tạo ra trải nghiệm thoải mái cho hành khách.</p>
+            <i>$850,000,000</i>
+            <div class="SoLuong">
+                <div>Số lượng:</div>
+                <input type="number" class="input-number" name="quantity" min="0" max="100" value="0">
+                <div>/100</div>
+                <button class="adjust-btn" onclick="adjustQuantity(event, 1)">+</button>
+                <button class="adjust-btn" onclick="adjustQuantity(event, -1)">-</button>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+            <button class="buy-btn">Mua ngay</button>
+            </div>
+            <div class="phanloai">
+                <div id="quansu"><h2>Máy bay Quân Sự</h2></div>
+            </div>
+            <div class="Photo">
+                <img src="./Image/F-15.webp" alt="">
+                <h4>F-15 Eagle</h4>
+                <p><strong>Quốc gia sản xuất:</strong> Hoa Kỳ.<br>
+                    <strong>Nhà sản xuất:</strong> McDonnell Douglas (hiện nay là Boeing).<br>
+                    <strong>Tính Năng Nổi Bật:</strong> Máy bay chiến đấu đa nhiệm, chủ yếu được sử dụng cho trận chiến không gian và tấn công mặt đất.</p>
+                <i>$30,000,000 - $100,000,000 (Tùy thuộc vào phiên bản và cấu hình).</i>
+                <div class="SoLuong">
+                    <div>Số lượng:</div>
+                    <input type="number" class="input-number" name="quantity" min="0" max="100" value="0">
+                    <div>/100</div>
+                    <button class="adjust-btn" onclick="adjustQuantity(event, 1)">+</button>
+                    <button class="adjust-btn" onclick="adjustQuantity(event, -1)">-</button>
+                </div>
+                <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+                <button class="buy-btn">Mua ngay</button>
+                </div>
+            <div class="Photo">
+                <img src="./Image/Su-30.jpg" alt="">
+                <h4>Su-30 Flanker</h4>
+                <p><strong>Quốc gia sản xuất:</strong>  Nga.<br>
+                    <strong>Nhà sản xuất:</strong> Sukhoi.<br>
+                    <strong>Tính Năng Nổi Bật:</strong> Máy bay chiến đấu đa nhiệm với khả năng tầm xa và tầm ngắn, có khả năng thực hiện nhiệm vụ không gian và đánh đấu không gian.</p>
+                <i>$37,000,000 - $60,000,000 (Tùy thuộc vào phiên bản và cấu hình).</i>
+                <div class="SoLuong">
+                    <div>Số lượng:</div>
+                    <input type="number" class="input-number" name="quantity" min="0" max="100" value="0">
+                    <div>/100</div>
+                    <button class="adjust-btn" onclick="adjustQuantity(event, 1)">+</button>
+                    <button class="adjust-btn" onclick="adjustQuantity(event, -1)">-</button>
+                </div>
+                <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+                <button class="buy-btn">Mua ngay</button>
+                </div>
+            <div class="Photo">
+                <img src="./Image/Su-57.jpg" alt="">
+                <h4>Su-57</h4>
+                <p><strong>Quốc gia sản xuất:</strong> Nga.<br>
+                    <strong>Nhà sản xuất:</strong> Sukhoi.<br>
+                    <strong>Tính Năng Nổi Bật:</strong> Máy bay chiến đấu thế hệ thứ 5, có khả năng tàng hình và trang bị công nghệ tiên tiến.</p>
+                <i>$50,000,000 - $100,000,000 (Tùy thuộc vào phiên bản và cấu hình).</i>
+                <div class="SoLuong">
+                    <div>Số lượng:</div>
+                    <input type="number" class="input-number" name="quantity" min="0" max="100" value="0">
+                    <div>/100</div>
+                    <button class="adjust-btn" onclick="adjustQuantity(event, 1)">+</button>
+                    <button class="adjust-btn" onclick="adjustQuantity(event, -1)">-</button>
+                </div>
+                <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+                <button class="buy-btn">Mua ngay</button>
+                </div>
+            <div class="Photo">
+                <img src="./Image/Rafale.jpg" alt="">
+                <h4>Dassault Rafale</h4>
+                <p><strong>Quốc gia sản xuất:</strong> Pháp.<br>
+                    <strong>Nhà sản xuất:</strong> Dassault Aviation.<br>
+                    <strong>Tính Năng Nổi Bật:</strong> Máy bay chiến đấu đa nhiệm Pháp với tính năng đa nhiệm, hiệu suất bay cao, hệ thống radar tiên tiến, khả năng chống hải và chống đất, Cơ động linh hoạt, và hệ thống điện tử và tấn công điện tử.</p>
+                <i>$76,000,000 - $100,000,000 (Tùy thuộc vào phiên bản và cấu hình).</i>
+                <div class="SoLuong">
+                    <div>Số lượng:</div>
+                    <input type="number" class="input-number" name="quantity" min="0" max="100" value="0">
+                    <div>/100</div>
+                    <button class="adjust-btn" onclick="adjustQuantity(event, 1)">+</button>
+                    <button class="adjust-btn" onclick="adjustQuantity(event, -1)">-</button>
+                </div>
+                <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+                <button class="buy-btn">Mua ngay</button>
+                </div>
+                <div class="phanloai">
+                    <div id="Phukien"><h2>Phụ kiện, Vũ khí</h2></div>
+                </div>
+                <div class="Photo">
+                    <img src="./Image/AIM-9.jpg" alt="">
+                    <h4>AIM-9 Sidewinder</h4>
+                    <p><strong>Quốc gia sản xuất:</strong> Hoa Kỳ.<br>
+                        <strong>Nhà sản xuất:</strong> Raytheon<br>
+                        <strong>Tính Năng Nổi Bật:</strong> Là một tên lửa tầm ngắn, sử dụng hệ thống IR (điều chỉnh theo tia hồng ngoại) để phát hiện mục tiêu.</p>
+                    <b>Hết hàng</b>
+                    </div>
+                <div class="Photo">
+                    <img src="./Image/AIM-120.jpg" alt="">
+                    <h4>AIM-120 AMRAAM</h4>
+                    <p><strong>Quốc gia sản xuất:</strong> Hoa Kỳ.<br>
+                        <strong>Nhà sản xuất:</strong> Raytheon<br>
+                        <strong>Tính Năng Nổi Bật:</strong> Là một tên lửa tầm trung, sử dụng hệ thống radar "Active Radar Homing" để phát hiện và theo dõi mục tiêu.</p>
+                    <b>Hết hàng</b>
+                    </div>
+                <div class="Photo">
+                    <img src="./Image/leap.jpg" alt="">
+                    <h4>Động cơ Tubrofan LEAP</h4>
+                    <p><strong>Nhà sản xuất:</strong> General Electric (GE)<br>
+                        <strong>Tính Năng Nổi Bật:</strong> Được thiết kế với các công nghệ tiên tiến như cánh quạt chịu lực, vật liệu siêu nhẹ, cấu trúc nâng cao và sử dụng công nghệ châm chích nhiên liệu và cổ điều khiển điện tử để cải thiện hiệu suất năng lượng, tiết kiệm nhiên liệu và giảm tiếng ồn.</p>
+                    <i>$5,000 - $8,000 (Tùy vào quy mô đặt hàng)</i>
+                    <div class="SoLuong">
+                        <div>Số lượng:</div>
+                        <input type="number" class="input-number" name="quantity" min="0" max="100" value="0">
+                        <div>/100</div>
+                        <button class="adjust-btn" onclick="adjustQuantity(event, 1)">+</button>
+                        <button class="adjust-btn" onclick="adjustQuantity(event, -1)">-</button>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+                    <button class="buy-btn">Mua ngay</button>
+                    </div>
+            </div>
+            </div>
+            </div>
+    <div class="footer">
+        <div class="Phan-Footer">
+                <h2>Địa điểm trụ sở</h2>
+                <p>Mỹ Thới, TP Long Xuyên, Tỉnh An Giang, Quốc gia Việt Nam</p>
+        </div>
+  
+        <div class="Phan-Footer">
+            <h2>Địa điểm chi nhánh</h2>
+            <p>475 Đường Trần Hưng ,Quận 5, TP Hồ Chí Minh, Quốc gia Việt Nam</p>
+        </div>
+  
+        <div class="Phan-Footer">
+            <h2>Kết nối với chúng tôi</h2>
+            <a href="https://www.facebook.com/" target="_blank">
+            <img src="./Image/Fb.png" alt=""></a>
+            <a href="https://youtu.be/BbeeuzU5Qc8?si=uIf2Q01Q3hO1A-eO" target="_blank">
+            <img src="./Image/yt.png" alt=""></a>
+            <a href="https://twitter.com/" target="_blank">
+            <img src="./Image/Twitter.avif" alt=""></a>
+         </div>
+  
+        <div class="Phan-Footer">
+        <h2 class="BanQuyen">&copy; 2023 Tập Đoàn Sản Xuất Máy Bay Việt Nam. Tất cả quyền được bảo lưu.</h2>
+        </div>
+    </div>  
+</div>
+</body>
+</html>

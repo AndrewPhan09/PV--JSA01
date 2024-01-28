@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./register.css">
+    <script src="./register.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../Image/logo.png" alt="" class="logo">
+                </a>
+            </div>   
+            <div class="menu-inner">      
+                <div class="menu-item" onclick="window.location.href='../index.html'">Trang chủ</div>
+                <div class="menu-item" onclick="window.location.href='./discover.html'">Sự kiện</div>
+                <div class="menu-item" onclick="window.location.href='./Faq.html'">Chi tiết/FaQ</div>
+                <div class="menu-item" onclick="window.location.href='./login.html'">Đăng nhập</div>
+                <div class="menu-item" onclick="window.location.href='../SideHtml/register.html'">Đăng ký</div>
+            </div>
+            <div class="input">
+                <input type="text" class="search_bar" placeholder="Tìm kiếm">
+                <i class="fas fa-search search_icon"></i>
+              </div>
+        </div>
+        <div class="register">
+            <h2>Đăng ký</h2>
+
+            <form id="registration">
+                <h4>Họ và tên:</h4>
+                <input type="text" id="name" class="register" name="Họ và Tên" placeholder="Họ và tên (Bắt buộc)" required>
+                <br>
+        
+                <h4>Tuổi:</h4>
+                <input type="text" id="age" class="register" name="Tuổi" placeholder="Tuổi (Bắt buộc)" required>
+                <br>
+        
+                <h4>Số điện thoại:</h4>
+                <input type="text" id="phonenumber" class="register" name="Số điện thoại" placeholder="Số điện thoại (Bắt buộc)" required>
+                <br>
+
+                <h4>Email:</h4>
+                <input type="text" id="email" class="register" name="Email" placeholder="Email (Bắt buộc)" required>
+                <br>
+                
+                <h4>Tên tổ chức (Nếu có):</h4>
+                <input type="text" id="organization" class="register" name="Tên tổ chúc" placeholder="Tên tổ chức">
+                <br>
+
+                <h4>Số tài khoản ngân hàng:</h4>
+                <input type="text" id="account" class="register" name="Số tài khoản" placeholder="Tài khoản Ngân Hàng (Bắt buộc)" required>
+                <br>
+
+                <h4>Mật khẩu:</h4>
+                <input type="password" id="pass" class="register" name="Mật Khẩu" placeholder="Nhập Mật Khẩu (Bắt buộc)" required>
+                <br>
+
+                <h4>Nhập lại Mật Khẩu:</h4>
+                <input type="password" id="again" class="register" name="Nhập lại" placeholder="Nhập lại Mật Khẩu (Bắt buộc)" required>
+                <br>
+        
+                <button type="button" id="register-button">Đăng ký</button>
+                <p>Đã có tài khoản? <a href="./login.html">Đăng nhập</a></p>
+                <div id="error-message" class="error-message"></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

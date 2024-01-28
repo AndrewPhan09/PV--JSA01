@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Karma", sans-serif
+}
+
+.logo img {
+    display: flex;
+    width: 90px; 
+}
+.nav {
+    display: flex;
+    background-color: rgb(7, 111, 111);
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+   
+}
+.menu-inner {
+    display: flex;
+    font-size: 20px;
+}
+
+.menu-item:hover {
+    background-color: rgb(0, 78, 107);
+}
+.menu-item {
+    padding: 0 20px; 
+    cursor: pointer;
+    padding: 15px 15px;
+    color: rgb(254, 254, 254);
+}
+.search_bar {
+    width: 450px;
+    padding: 10px; 
+    border: none;
+    border-radius: 2px;
+}
+.search_icon {
+    position: absolute;
+    top: 35px;
+    right: 2%;
+    transform: translateY(-50%);
+    color: #3a3a3a;
+    cursor: pointer;
+    font-size: 20px;
+}
+/*Text*/
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+section {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Person {
+    max-width: 120px;
+    float: left;
+    margin-right: 20px;
+}
+
+h3{
+    color: #333;
+}
+
+h3 {
+    margin-top: 5px;
+    color: #333;
+}
+
+h4 {
+    line-height: 1.6;
+    color: #555;
+}
+
+.FaQ{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.faq-item {
+    background-color: #b6b6b6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+.answer {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.chatbox {
+    background-color: #f1f1f1;
+    padding: 10px;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.form-input {
+    width: 100%;
+    padding: 20px;
+}
+
+.form-button {
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px auto 0;
+    display: block;
+    width: 50%;
+    height: 60px;
+}
+.footer {
+    background-color: rgb(0, 97, 97);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Phan-Footer {
+    flex: 1;
+    margin: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+}
+
+.Phan-Footer:last-child {
+    border-right: none;
+}
+
+.Phan-Footer img {
+    width: 40px;
+    height: auto;
+    margin: 6px;
+}
+
+.Phan-Footer h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.BanQuyen {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+
+

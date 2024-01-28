@@ -1,0 +1,279 @@
+    /* Nav và slideshow*/
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Karma", sans-serif
+}
+
+.logo img {
+    display: flex;
+    width: 90px; 
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides img {
+    max-width: 60%;
+    height: auto;
+}
+  
+.nav {
+    display: flex;
+    background-color: rgb(7, 111, 111);
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+   
+}
+
+.side{
+    margin-bottom: -1px;
+    margin: auto;
+}
+
+.menu-inner {
+    display: flex;
+    font-size: 20px;
+}
+
+.menu-item:hover {
+    background-color: rgb(0, 78, 107);
+}
+.menu-item {
+    padding: 0 20px; 
+    cursor: pointer;
+    padding: 15px 15px;
+    color: rgb(254, 254, 254);
+}
+.search_bar {
+    width: 450px;
+    padding: 10px; 
+    border: none;
+    border-radius: 2px;
+}
+.search_icon {
+    position: absolute;
+    top: 25px;
+    right: 2%;
+    transform: translateY(-50%);
+    color: #3a3a3a;
+    cursor: pointer;
+    font-size: 20px;
+}
+/*Sidenav*/
+.sidenav {
+    height: 370px;
+    width: 213px;
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    left: 0;
+    background-color: rgb(11, 105, 105);
+    padding-top: 10px;
+    padding-left: 6px;
+    color: rgb(255, 255, 255);
+}
+  
+.sidenav a {
+    padding: 6px 6px 6px 8px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.content {
+    margin-left: 150px;
+    padding: 16px;
+}
+/*grid photo */
+.grid-photo {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.phanloai {
+    background-color: #b9b8b8;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.phanloai h2{
+    text-align: center;
+    margin: 5px auto;
+}
+
+.DanhSach h3{
+    text-align: center;
+    margin: 5px auto;
+    margin-bottom: 10px;
+}
+
+.Photo {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Photo p strong {
+    font-weight: bold;
+}
+
+.Photo h4 {
+    margin-bottom: 5px;
+}
+
+.Photo b{
+    font-weight: bold;
+    color: #ae0000;
+    display: block;
+    margin-top: 10px;
+}
+
+.Photo p {
+    margin-bottom: 10px;
+}
+
+.buy-btn{
+    margin-top: 5px;
+    font-size: 20px;
+    width: 80%;
+    height: 30px;
+    background-color:rgb(10, 169, 169);
+    color: white;
+    border:none;
+    cursor: pointer;
+}
+
+.add-to-cart-btn {
+    margin-top: 5px;
+    font-size: 20px;
+    width: 60%;
+    height: 30px;
+    background-color:rgb(169, 108, 10);
+    color: white;
+    border:none;
+    cursor: pointer;
+    position: relative;
+}
+
+.add-to-cart-btn i {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+
+.SoLuong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SoLuong > div {
+  margin-right: 5px;
+}
+
+.input-number {
+    text-align: center;
+    width: 35px;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid #5f5f5f;
+    margin: 0 10px;
+}
+
+.input-number::-webkit-inner-spin-button,
+  .input-number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+.adjust-btn {
+    font-size: 16px;
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      border: 1px solid #000000;
+      background-color: #ffffff;
+      margin: 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+i {
+    font-weight: bold;
+    color: #00d0ff;
+    display: block;
+    margin-top: 10px;
+}
+/*footer*/
+.footer {
+    background-color: rgb(0, 97, 97);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Phan-Footer {
+    flex: 1;
+    margin: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+}
+
+.Phan-Footer:last-child {
+    border-right: none;
+}
+
+.Phan-Footer img {
+    width: 40px;
+    height: auto;
+    margin: 6px;
+}
+
+.Phan-Footer h2 {
+    margin-bottom: 10px;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.BanQuyen {
+    margin-top: 30px;
+    font-size: 14px;
+}
+.sidenav h2{
+    margin-top: 20px;
+}
